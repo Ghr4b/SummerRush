@@ -25,7 +25,8 @@ read it to undertstand how to bypass thymeleaf sandbox
 
 there is another exploit but its too complictated so i'll leave it here :
 
-[complex solution](https://github.com/modzero/mod0-ssrf-chain/blob/master/ssrf-chain.py)
+[complex solution](https://github.com/Ghr4b/SummerRush/blob/main/solve.txt)
+credit : oxfun
 
 my idea is similar the one in the report:
 
@@ -376,6 +377,7 @@ that works bc of this line here :
 logService.log("deserialized object " + object.toString() + " at " + LocalDateTime.now());
 
 ```
+credit: phreakace b thon
 
 
 # finally
