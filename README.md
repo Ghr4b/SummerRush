@@ -4,11 +4,14 @@
 Konoha is a simple thymeleaf ssti challenge. 
 
 ``` html
- <div class="detail-item" th:unless="${os != null}">
+<div class="detail-item" th:unless="${os == null}">
     <span class="detail-label">Logged in via :</span>
-    <span> couldn't get os</span>
+    <span th:text="@{'Using __${os}__ OS'}"></span>
 </div>
-
+<div class="detail-item" th:unless="${os != null}">
+   <span class="detail-label">Logged in via :</span>
+  <span> couldn't get os</span>
+ </div>
 ```
 the os variable is set via the header "sec-ch-ua-platform"
 
